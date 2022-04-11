@@ -1,4 +1,4 @@
-
+//using swap method:
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -31,4 +31,19 @@ int main()
     return 0;
 }
 
+
+//using stls:
+#include <bits/stdc++.h>  
+using namespace std;  
+int main ()  
+{  
+    // declare and initialize an array  
+    int arr1[] = {34, 78, 21, 90, 5, 2};  
+    int num = sizeof(arr1)/sizeof(arr1[0]);  
+    reverse(arr1,arr1 + num);  
+    for(int i =0 ;i<num;i++){
+        cout<<arr1[i]<<" ";
+    }
+    return 0;   
+}  
 
