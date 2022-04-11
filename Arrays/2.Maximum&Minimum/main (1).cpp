@@ -1,3 +1,4 @@
+//Original Method:
 #include <bits/stdc++.h>  
 using namespace std; 
 
@@ -29,5 +30,17 @@ int main ()
    cout<<endl;
    maximum(arr,n);
    minimum(arr,n);
+   return 0;
+}  
+
+//Using STLs:
+#include <bits/stdc++.h>  
+using namespace std; 
+int main ()  
+{  
+   int arr[]={2,4,8,4,2,8,6};
+   int num = sizeof(arr)/sizeof(arr[0]);
+   cout<<"Maximum element is: "<<*max_element(arr,arr+num)<<endl;
+   cout<<"Minimum element is: "<<*min_element(arr,arr+num);
    return 0;
 }  
